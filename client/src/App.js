@@ -1,10 +1,13 @@
-
 import './App.css';
+import { Routes, Route } from "react-router-dom"
+import Canvas from './components/Canvas/Canvas';
 
 function App() {
   return (
     <div className="App">
-      Client Here...
+      <Routes>
+        <Route path="/" element={<Canvas/>} />
+      </Routes>
     </div>
   );
 }

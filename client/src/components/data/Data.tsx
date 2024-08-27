@@ -1,4 +1,4 @@
-import { AdsClickIcon, ArrowRightAltIcon, BackHandIcon, ChangeHistoryIcon, Crop169Icon, DrawIcon, HorizontalRuleIcon, ImageSearchIcon, LockOpenIcon, PanoramaFishEyeIcon, TextFieldsIcon } from '../Icons/Icons'
+import { AdsClickIcon, ArrowRightAltIcon, BackHandIcon, ChangeHistoryIcon, ConstructionIcon, Crop169Icon, DeleteSweepIcon, DrawIcon, HorizontalRuleIcon, ImageSearchIcon, LockOpenIcon, PanoramaFishEyeIcon, TextFieldsIcon } from '../Icons/Icons'
 
 const tool_data = [
     {   
@@ -55,6 +55,16 @@ const tool_data = [
         name:"inserttext",
         action:"inserttextitem",
         icon:TextFieldsIcon,
+    },
+    {
+        name:"eraser",
+        action:"eraseritem",
+        icon:DeleteSweepIcon,
+    },
+    {
+        name:"moreTools",
+        action:"moreToolsitem",
+        icon:ConstructionIcon,
     }
 ]
 

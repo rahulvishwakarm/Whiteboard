@@ -12,9 +12,6 @@ function Canvas() {
         <div className='canvas_name' style={{"marginTop":"10px"}}>
             <div className='canvas_menu '>
                 <AppMenu />
-                <h1>{canvasvalue}</h1>
-                <Button onClick={() => dispatch(increase())} >Increase</Button>
-                <Button onClick={() => dispatch(decrease())} >Decrease</Button>
             </div>
         </div>
     )

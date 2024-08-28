@@ -1,15 +1,14 @@
-import React from 'react'
-import { tool_data } from '../data/Data'
+import React, { useState } from 'react'
+import { tool_data } from '../data/Tools'
 import { ShareIcon, VerticalSplitIcon } from '../Icons/Icons'
+import Category from '../Category/Category';
 
 export default function AppMenu() {
     return (
         <div className='flex justify-between'>
 
-            {/* Category */}
-            <div className="categoryBar ml-5 border-2 rounded-lg p-2 rounded-lg hover:bg-violet-200 bg-violet-100 hover:text-violet-800 toolShape_icon">
-                <VerticalSplitIcon />
-            </div>
+            {/* Category Dropdown*/}
+            <Category />
 
             {/* Tools */}
             <div className='px-1 shadow flex inline-block border-2 rounded-lg toolStack'>
@@ -34,9 +33,9 @@ export default function AppMenu() {
             </div>
 
             {/* Utils */}
-            <div className="utils mr-5 shadow border-2 rounded-lg p-2 w-11 rounded-lg hover:bg-violet-200 bg-violet-100 hover:text-violet-800 toolShape_icon">
-                <ShareIcon/>
-            </div>
+            <button className="categoryBar mr-5 shadow border-2 rounded-lg p-2 rounded-lg hover:bg-violet-200 bg-violet-100 hover:text-violet-800 toolShape_icon" type="button">
+                <ShareIcon />
+            </button>
 
         </div>
     )

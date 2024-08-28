@@ -18,7 +18,7 @@ const category_data = [
     },
     {
         name: "exportImage",
-        label:"Export Image...",
+        label:"Export",
         shortCut:"Ctrl+Shift+E",
         action:"exportImageitem",
         icon: AddPhotoAlternateIcon,

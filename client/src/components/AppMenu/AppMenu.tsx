@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { tool_data } from '../data/Tools'
-import { ShareIcon, VerticalSplitIcon } from '../Icons/Icons'
+import { tool_data } from '../../data/Tools'
+import { ShareIcon, VerticalSplitIcon } from '../../Icons/Icons'
 import Category from '../Category/Category';
 
 export default function AppMenu() {

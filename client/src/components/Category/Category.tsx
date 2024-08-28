@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { VerticalSplitIcon } from "../Icons/Icons";
-import { category_data, category_data_socials } from "../data/Category";
+import { VerticalSplitIcon } from "../../Icons/Icons";
+import { category_data, category_data_socials } from "../../data/Category";
 
 const Category = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +41,7 @@ const Category = () => {
         {isOpen && (
             <div
                 id="dropdownMenu"
-                className="origin-top-left absolute mt-2 ml-5 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none "
+                className="origin-top-left absolute mt-2 ml-5 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none max-h-[calc(90vh-4rem)] overflow-y-auto"
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="menu-button"
@@ -68,7 +68,6 @@ const Category = () => {
                 })
             }
             <hr style={{ width: "80%", marginLeft: "10%", marginRight: "10%" }} />
-
             {
                 category_data_socials.map((social, index) => {
                     return (
